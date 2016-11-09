@@ -1,0 +1,31 @@
+{% extends "base.html"%}
+
+
+
+{% block mainbody %}
+	<div class='chartCont' id='cs-chart-container'>Charts will load here.</div>
+	<script >
+	FusionCharts.ready(function () {
+		var chartdata = {{ datas|safe }};    
+		var dailyCSatChart = new FusionCharts({
+			"type": "line",
+			"renderAt": "cs-chart-container",
+			"width": "1450",
+			"height": "600",
+			"dataFormat": "json",
+			"dataSource": {
+			    "chart":{
+			            "caption":"ECG data in 10 sec",
+			            "anchorRadius":0,
+			            "xaxisname":"time",
+			            "yaxisname":"value",
+			            "yaxismaxvalue":"1",
+			            "showvalues":"0",
+			            "theme":"fint"
+			            },
+			            "data": chartdata
+			}
+		}).render();    
+	})
+</script>
+{% endblock %}

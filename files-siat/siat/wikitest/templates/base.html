@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>ECG Analysis in Computer</title>
+<style>
+</style>
+<link  href="/static/css/style.css" rel="stylesheet" type="text/css">
+<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/fusioncharts.js"></script>
+<script type="text/javascript" src="/static/js/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("ul").click(function(){
+        $(".nav li").removeClass("active");
+        $(this).parent().addClass("active");
+    });
+});
+</script>
+</head>
+<body> 
+    <div class="top-title">
+      <h1 class="text1" ><font color="#00f">Wiki ECG Analysis</font> </h1>
+      <!-- <div class="register">Register</div>
+      <div class="login">Log In</div>    -->   
+    </div>
+    <div></div>
+    <div></div>
+    <div class="firstcontainer">  
+        <!-- <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-user"></span>
+        About Me
+        </button> -->
+        <ul class="nav nav-pills  nav-tabs " id ="ul1">
+	        <li class="active"><a href="/health">My Health</a></li> 
+	        <li ><a href="/diagnosis">Diagnosis</a></li>
+	        <li ><a href="/history">History</a></li>
+            <li class="dropdown"><a>About</a>
+                <div class="dropdown-content">
+                  <a href="/message">Info</a>
+                  <a href="/index">LogOut</a>
+                </div>
+            </li>
+	        <br>
+	        <br>
+        </ul>
+	    <div id='container'>
+		    <div>
+		        <br>
+		        	{% block mainbody %}
+		            <div><h2>{{messages}}</h2></div>
+		            {% endblock %}
+		    </div>
+	    </div>    
+    </div>
+    <div></div>
+    <div></div>     
+</body>
+</html>

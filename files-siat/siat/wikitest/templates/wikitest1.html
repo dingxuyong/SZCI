@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>ECG Analysis in Compute</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fff;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+}
+.chartCont {
+    padding: 0px 12px;
+}
+</style>
+<link  href="/static/css/style.css" rel="stylesheet" type="text/css">
+<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/fusioncharts.js"></script>
+<script type="text/javascript" src="/static/js/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript">
+FusionCharts.ready(function () {
+    var chartdata = {{ datas|safe }};    
+    var dailyCSatChart = new FusionCharts({
+            "type": "line",
+            "renderAt": "cs-chart-container",
+            "width": "1100",
+            "height": "600",
+            "dataFormat": "json",
+            "dataSource": {
+                "chart":{
+                    "caption":"ECG data in 10 sec",
+                    "anchorRadius":0,
+                    "xaxisname":"time",
+                    "yaxisname":"value",
+                    "yaxismaxvalue":"1",
+                    "showvalues":"0",
+                    "theme":"fint"
+                },
+                "data": chartdata
+        }
+    }).render();    
+})
+</script>
+</head>
+<body>
+    <div class="top-yu">
+      <h1 class="text1" ><font color="#00f">Wiki ECG Analysis</font> </h1>
+      <div class="log in">Log In</div>
+      <div></div>
+      <div></div>
+      <div class="register" >Register</div>
+    </div>
+    <div></div>
+    <div></div>
+    <div class="conte">  
+        <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-user"></span> User
+        </button>
+        <br>
+        <br>
+        <ul class="nav nav-pills  nav-tabs ">
+            <li class="active"><a href="/wikitest1">My Health</a></li> 
+            <li ><a href="/diagnosis">Diagnosis</a></li>
+            <li><a href="/history">History</a></li>
+            <li><a href="/message">About</a></li>
+            <br>
+            <br>
+            <div id='container'>
+                <div>
+                    <div class='chartCont' id='cs-chart-container'>Charts will load here.</div>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div></div>
+    <div></div>
+    
+</body>
+</html>

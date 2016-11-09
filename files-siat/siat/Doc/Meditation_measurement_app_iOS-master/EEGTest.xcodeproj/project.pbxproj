@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B2C81211AAB9AE2007DBD12 /* legend.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81201AAB9AE2007DBD12 /* legend.png */; };
+		3B2C81231AABAA20007DBD12 /* Canon_in_D_Major.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81221AABAA20007DBD12 /* Canon_in_D_Major.mp3 */; };
+		3B2C812A1AABB0AC007DBD12 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81241AABB0AC007DBD12 /* Icon-40@2x.png */; };
+		3B2C812B1AABB0AC007DBD12 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81251AABB0AC007DBD12 /* Icon-40@3x.png */; };
+		3B2C812C1AABB0AC007DBD12 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81261AABB0AC007DBD12 /* Icon-60@2x.png */; };
+		3B2C812D1AABB0AC007DBD12 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81271AABB0AC007DBD12 /* Icon-60@3x.png */; };
+		3B2C812E1AABB0AC007DBD12 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81281AABB0AC007DBD12 /* Icon-Small@2x.png */; };
+		3B2C812F1AABB0AC007DBD12 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81291AABB0AC007DBD12 /* Icon-Small@3x.png */; };
+		3B2C81311AABB7CB007DBD12 /* Clock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81301AABB7CB007DBD12 /* Clock.mp3 */; };
+		3B2C81371AACC4F2007DBD12 /* MedSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2C81361AACC4F2007DBD12 /* MedSettingsViewController.swift */; };
+		3B2C81701AAF27A8007DBD12 /* medBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C816F1AAF27A8007DBD12 /* medBG.png */; };
+		3B2C81841AAF3628007DBD12 /* NewRawBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81831AAF3628007DBD12 /* NewRawBG.png */; };
+		3B2C81861AAF37E7007DBD12 /* NewFreqBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81851AAF37E7007DBD12 /* NewFreqBG.png */; };
+		3B2C81881AAF3ABA007DBD12 /* Question.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C81871AAF3ABA007DBD12 /* Question.png */; };
+		3B3AA9251A7EE91000B3BF93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3AA9241A7EE91000B3BF93 /* AppDelegate.swift */; };
+		3B3AA92C1A7EE91000B3BF93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3AA92A1A7EE91000B3BF93 /* Main.storyboard */; };
+		3B3AA9311A7EE91000B3BF93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3AA92F1A7EE91000B3BF93 /* LaunchScreen.xib */; };
+		3B3AA93D1A7EE91000B3BF93 /* EEGTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3AA93C1A7EE91000B3BF93 /* EEGTestTests.swift */; };
+		3BB237CE1A84397E00840A5D /* ConnectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB237CD1A84397E00840A5D /* ConnectionTableViewController.swift */; };
+		3BB237D01A84461C00840A5D /* Central.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB237CF1A84461C00840A5D /* Central.swift */; };
+		3BB237D91A85EC9400840A5D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB237D81A85EC9400840A5D /* SettingsTableViewController.swift */; };
+		3BB237E11A8604E000840A5D /* RawDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB237E01A8604E000840A5D /* RawDataViewController.swift */; };
+		3BB237EE1A88111300840A5D /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB237E91A88111300840A5D /* JBBarChartView.m */; };
+		3BB237EF1A88111300840A5D /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB237EB1A88111300840A5D /* JBChartView.m */; };
+		3BB237F01A88111300840A5D /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB237ED1A88111300840A5D /* JBLineChartView.m */; };
+		3BC328D41A8B7D6100DF0C58 /* EEGData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC328D31A8B7D6100DF0C58 /* EEGData.swift */; };
+		3BC328D61A8B809D00DF0C58 /* FreqSpecDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC328D51A8B809D00DF0C58 /* FreqSpecDataViewController.swift */; };
+		3BC328D91A8C250900DF0C58 /* SpectrumPower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC328D81A8C250900DF0C58 /* SpectrumPower.swift */; };
+		3BC328DB1A8C321000DF0C58 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC328DA1A8C321000DF0C58 /* Accelerate.framework */; };
+		3BC328DD1A8C575800DF0C58 /* NonBrainFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC328DC1A8C575800DF0C58 /* NonBrainFeatures.swift */; };
+		3BC328DF1A8E3C6600DF0C58 /* BrainFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC328DE1A8E3C6600DF0C58 /* BrainFeatures.swift */; };
+		3BC328E71A917B9300DF0C58 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC328E61A917B9300DF0C58 /* MeditationViewController.swift */; };
+		3BD39B9A1A9BC6C000A0AB2D /* MiscIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BD39B991A9BC6C000A0AB2D /* MiscIcon.png */; };
+		3BD39B9E1A9BC77B00A0AB2D /* FreqIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BD39B9B1A9BC77B00A0AB2D /* FreqIcon.png */; };
+		3BD39B9F1A9BC77B00A0AB2D /* MeditationIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BD39B9C1A9BC77B00A0AB2D /* MeditationIcon.png */; };
+		3BD39BA01A9BC77B00A0AB2D /* RawIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BD39B9D1A9BC77B00A0AB2D /* RawIcon.png */; };
+		3BD39BA41A9BD76B00A0AB2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD39BA31A9BD76B00A0AB2D /* Images.xcassets */; };
+		3BED1C101A9BE6DC0033EAE9 /* hyperneuro_green_logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3BED1C0F1A9BE6DC0033EAE9 /* hyperneuro_green_logo.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B3AA9371A7EE91000B3BF93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B3AA9171A7EE91000B3BF93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B3AA91E1A7EE91000B3BF93;
+			remoteInfo = EEGTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B2C81201AAB9AE2007DBD12 /* legend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = legend.png; sourceTree = "<group>"; };
+		3B2C81221AABAA20007DBD12 /* Canon_in_D_Major.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Canon_in_D_Major.mp3; sourceTree = "<group>"; };
+		3B2C81241AABB0AC007DBD12 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40@2x.png"; path = "Icons/Icon-40@2x.png"; sourceTree = "<group>"; };
+		3B2C81251AABB0AC007DBD12 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40@3x.png"; path = "Icons/Icon-40@3x.png"; sourceTree = "<group>"; };
+		3B2C81261AABB0AC007DBD12 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@2x.png"; path = "Icons/Icon-60@2x.png"; sourceTree = "<group>"; };
+		3B2C81271AABB0AC007DBD12 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@3x.png"; path = "Icons/Icon-60@3x.png"; sourceTree = "<group>"; };
+		3B2C81281AABB0AC007DBD12 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Icons/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		3B2C81291AABB0AC007DBD12 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@3x.png"; path = "Icons/Icon-Small@3x.png"; sourceTree = "<group>"; };
+		3B2C81301AABB7CB007DBD12 /* Clock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clock.mp3; sourceTree = "<group>"; };
+		3B2C81361AACC4F2007DBD12 /* MedSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedSettingsViewController.swift; sourceTree = "<group>"; };
+		3B2C816F1AAF27A8007DBD12 /* medBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medBG.png; sourceTree = "<group>"; };
+		3B2C81831AAF3628007DBD12 /* NewRawBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewRawBG.png; sourceTree = "<group>"; };
+		3B2C81851AAF37E7007DBD12 /* NewFreqBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewFreqBG.png; sourceTree = "<group>"; };
+		3B2C81871AAF3ABA007DBD12 /* Question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Question.png; path = Icons/Question.png; sourceTree = "<group>"; };
+		3B3AA91F1A7EE91000B3BF93 /* EEGTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEGTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3AA9231A7EE91000B3BF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B3AA9241A7EE91000B3BF93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B3AA92B1A7EE91000B3BF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B3AA9301A7EE91000B3BF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3B3AA9361A7EE91000B3BF93 /* EEGTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EEGTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B3AA93B1A7EE91000B3BF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B3AA93C1A7EE91000B3BF93 /* EEGTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EEGTestTests.swift; sourceTree = "<group>"; };
+		3BB237CD1A84397E00840A5D /* ConnectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionTableViewController.swift; sourceTree = "<group>"; };
+		3BB237CF1A84461C00840A5D /* Central.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Central.swift; sourceTree = "<group>"; };
+		3BB237D81A85EC9400840A5D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		3BB237E01A8604E000840A5D /* RawDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawDataViewController.swift; sourceTree = "<group>"; };
+		3BB237E81A88111300840A5D /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
+		3BB237E91A88111300840A5D /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
+		3BB237EA1A88111300840A5D /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
+		3BB237EB1A88111300840A5D /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
+		3BB237EC1A88111300840A5D /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
+		3BB237ED1A88111300840A5D /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
+		3BB237F11A88115C00840A5D /* EEGTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEGTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		3BC328D31A8B7D6100DF0C58 /* EEGData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEGData.swift; sourceTree = "<group>"; };
+		3BC328D51A8B809D00DF0C58 /* FreqSpecDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreqSpecDataViewController.swift; sourceTree = "<group>"; };
+		3BC328D81A8C250900DF0C58 /* SpectrumPower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpectrumPower.swift; sourceTree = "<group>"; };
+		3BC328DA1A8C321000DF0C58 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		3BC328DC1A8C575800DF0C58 /* NonBrainFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonBrainFeatures.swift; sourceTree = "<group>"; };
+		3BC328DE1A8E3C6600DF0C58 /* BrainFeatures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainFeatures.swift; sourceTree = "<group>"; };
+		3BC328E61A917B9300DF0C58 /* MeditationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		3BD39B991A9BC6C000A0AB2D /* MiscIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MiscIcon.png; path = Icons/MiscIcon.png; sourceTree = "<group>"; };
+		3BD39B9B1A9BC77B00A0AB2D /* FreqIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FreqIcon.png; path = Icons/FreqIcon.png; sourceTree = "<group>"; };
+		3BD39B9C1A9BC77B00A0AB2D /* MeditationIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MeditationIcon.png; path = Icons/MeditationIcon.png; sourceTree = "<group>"; };
+		3BD39B9D1A9BC77B00A0AB2D /* RawIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RawIcon.png; path = Icons/RawIcon.png; sourceTree = "<group>"; };
+		3BD39BA31A9BD76B00A0AB2D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3BED1C0F1A9BE6DC0033EAE9 /* hyperneuro_green_logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hyperneuro_green_logo.jpeg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B3AA91C1A7EE91000B3BF93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC328DB1A8C321000DF0C58 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3AA9331A7EE91000B3BF93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B2C816C1AAE63CF007DBD12 /* Background images */ = {
+			isa = PBXGroup;
+			children = (
+				3B2C81851AAF37E7007DBD12 /* NewFreqBG.png */,
+				3B2C81831AAF3628007DBD12 /* NewRawBG.png */,
+				3B2C816F1AAF27A8007DBD12 /* medBG.png */,
+			);
+			name = "Background images";
+			sourceTree = "<group>";
+		};
+		3B3AA9161A7EE91000B3BF93 = {
+			isa = PBXGroup;
+			children = (
+				3BC328DA1A8C321000DF0C58 /* Accelerate.framework */,
+				3B3AA9211A7EE91000B3BF93 /* EEGTest */,
+				3B3AA9391A7EE91000B3BF93 /* EEGTestTests */,
+				3B3AA9201A7EE91000B3BF93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B3AA9201A7EE91000B3BF93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B3AA91F1A7EE91000B3BF93 /* EEGTest.app */,
+				3B3AA9361A7EE91000B3BF93 /* EEGTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B3AA9211A7EE91000B3BF93 /* EEGTest */ = {
+			isa = PBXGroup;
+			children = (
+				3BD39B891A93896E00A0AB2D /* Resources */,
+				3B3AA9241A7EE91000B3BF93 /* AppDelegate.swift */,
+				3BB237CF1A84461C00840A5D /* Central.swift */,
+				3BC328D31A8B7D6100DF0C58 /* EEGData.swift */,
+				3BD39BA31A9BD76B00A0AB2D /* Images.xcassets */,
+				3B3AA92A1A7EE91000B3BF93 /* Main.storyboard */,
+				3B3AA92F1A7EE91000B3BF93 /* LaunchScreen.xib */,
+				3BB237F11A88115C00840A5D /* EEGTest-Bridging-Header.h */,
+				3BD39B881A9240E000A0AB2D /* Controller */,
+				3BC328D71A8C228E00DF0C58 /* EEGAPI */,
+				3BB237E61A8810D700840A5D /* Libraries */,
+				3B3AA9221A7EE91000B3BF93 /* Supporting Files */,
+			);
+			path = EEGTest;
+			sourceTree = "<group>";
+		};
+		3B3AA9221A7EE91000B3BF93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B3AA9231A7EE91000B3BF93 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B3AA9391A7EE91000B3BF93 /* EEGTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B3AA93C1A7EE91000B3BF93 /* EEGTestTests.swift */,
+				3B3AA93A1A7EE91000B3BF93 /* Supporting Files */,
+			);
+			path = EEGTestTests;
+			sourceTree = "<group>";
+		};
+		3B3AA93A1A7EE91000B3BF93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B3AA93B1A7EE91000B3BF93 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BB237E61A8810D700840A5D /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3BB237E71A88111300840A5D /* JBChartView */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		3BB237E71A88111300840A5D /* JBChartView */ = {
+			isa = PBXGroup;
+			children = (
+				3BB237E81A88111300840A5D /* JBBarChartView.h */,
+				3BB237E91A88111300840A5D /* JBBarChartView.m */,
+				3BB237EA1A88111300840A5D /* JBChartView.h */,
+				3BB237EB1A88111300840A5D /* JBChartView.m */,
+				3BB237EC1A88111300840A5D /* JBLineChartView.h */,
+				3BB237ED1A88111300840A5D /* JBLineChartView.m */,
+			);
+			path = JBChartView;
+			sourceTree = "<group>";
+		};
+		3BC328D71A8C228E00DF0C58 /* EEGAPI */ = {
+			isa = PBXGroup;
+			children = (
+				3BC328D81A8C250900DF0C58 /* SpectrumPower.swift */,
+				3BC328DC1A8C575800DF0C58 /* NonBrainFeatures.swift */,
+				3BC328DE1A8E3C6600DF0C58 /* BrainFeatures.swift */,
+			);
+			name = EEGAPI;
+			sourceTree = "<group>";
+		};
+		3BD39B881A9240E000A0AB2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3BB237D81A85EC9400840A5D /* SettingsTableViewController.swift */,
+				3BB237E01A8604E000840A5D /* RawDataViewController.swift */,
+				3BC328D51A8B809D00DF0C58 /* FreqSpecDataViewController.swift */,
+				3BC328E61A917B9300DF0C58 /* MeditationViewController.swift */,
+				3BB237CD1A84397E00840A5D /* ConnectionTableViewController.swift */,
+				3B2C81361AACC4F2007DBD12 /* MedSettingsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3BD39B891A93896E00A0AB2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B2C81301AABB7CB007DBD12 /* Clock.mp3 */,
+				3B2C81221AABAA20007DBD12 /* Canon_in_D_Major.mp3 */,
+				3B2C81201AAB9AE2007DBD12 /* legend.png */,
+				3BED1C0F1A9BE6DC0033EAE9 /* hyperneuro_green_logo.jpeg */,
+				3B2C816C1AAE63CF007DBD12 /* Background images */,
+				3BD39B981A9BC6A800A0AB2D /* Icons */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3BD39B981A9BC6A800A0AB2D /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				3B2C81871AAF3ABA007DBD12 /* Question.png */,
+				3B2C81241AABB0AC007DBD12 /* Icon-40@2x.png */,
+				3B2C81251AABB0AC007DBD12 /* Icon-40@3x.png */,
+				3B2C81261AABB0AC007DBD12 /* Icon-60@2x.png */,
+				3B2C81271AABB0AC007DBD12 /* Icon-60@3x.png */,
+				3B2C81281AABB0AC007DBD12 /* Icon-Small@2x.png */,
+				3B2C81291AABB0AC007DBD12 /* Icon-Small@3x.png */,
+				3BD39B9B1A9BC77B00A0AB2D /* FreqIcon.png */,
+				3BD39B9C1A9BC77B00A0AB2D /* MeditationIcon.png */,
+				3BD39B9D1A9BC77B00A0AB2D /* RawIcon.png */,
+				3BD39B991A9BC6C000A0AB2D /* MiscIcon.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B3AA91E1A7EE91000B3BF93 /* EEGTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3AA9401A7EE91000B3BF93 /* Build configuration list for PBXNativeTarget "EEGTest" */;
+			buildPhases = (
+				3B3AA91B1A7EE91000B3BF93 /* Sources */,
+				3B3AA91C1A7EE91000B3BF93 /* Frameworks */,
+				3B3AA91D1A7EE91000B3BF93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EEGTest;
+			productName = EEGTest;
+			productReference = 3B3AA91F1A7EE91000B3BF93 /* EEGTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B3AA9351A7EE91000B3BF93 /* EEGTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3AA9431A7EE91000B3BF93 /* Build configuration list for PBXNativeTarget "EEGTestTests" */;
+			buildPhases = (
+				3B3AA9321A7EE91000B3BF93 /* Sources */,
+				3B3AA9331A7EE91000B3BF93 /* Frameworks */,
+				3B3AA9341A7EE91000B3BF93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B3AA9381A7EE91000B3BF93 /* PBXTargetDependency */,
+			);
+			name = EEGTestTests;
+			productName = EEGTestTests;
+			productReference = 3B3AA9361A7EE91000B3BF93 /* EEGTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B3AA9171A7EE91000B3BF93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					3B3AA91E1A7EE91000B3BF93 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 6A3PQ7NMLS;
+					};
+					3B3AA9351A7EE91000B3BF93 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3B3AA91E1A7EE91000B3BF93;
+					};
+				};
+			};
+			buildConfigurationList = 3B3AA91A1A7EE91000B3BF93 /* Build configuration list for PBXProject "EEGTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B3AA9161A7EE91000B3BF93;
+			productRefGroup = 3B3AA9201A7EE91000B3BF93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B3AA91E1A7EE91000B3BF93 /* EEGTest */,
+				3B3AA9351A7EE91000B3BF93 /* EEGTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B3AA91D1A7EE91000B3BF93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD39BA41A9BD76B00A0AB2D /* Images.xcassets in Resources */,
+				3B2C81231AABAA20007DBD12 /* Canon_in_D_Major.mp3 in Resources */,
+				3B2C812C1AABB0AC007DBD12 /* Icon-60@2x.png in Resources */,
+				3B2C812E1AABB0AC007DBD12 /* Icon-Small@2x.png in Resources */,
+				3B3AA92C1A7EE91000B3BF93 /* Main.storyboard in Resources */,
+				3B2C812D1AABB0AC007DBD12 /* Icon-60@3x.png in Resources */,
+				3B3AA9311A7EE91000B3BF93 /* LaunchScreen.xib in Resources */,
+				3B2C812A1AABB0AC007DBD12 /* Icon-40@2x.png in Resources */,
+				3B2C81841AAF3628007DBD12 /* NewRawBG.png in Resources */,
+				3BD39B9A1A9BC6C000A0AB2D /* MiscIcon.png in Resources */,
+				3B2C81881AAF3ABA007DBD12 /* Question.png in Resources */,
+				3B2C81701AAF27A8007DBD12 /* medBG.png in Resources */,
+				3BD39B9F1A9BC77B00A0AB2D /* MeditationIcon.png in Resources */,
+				3BD39B9E1A9BC77B00A0AB2D /* FreqIcon.png in Resources */,
+				3B2C81311AABB7CB007DBD12 /* Clock.mp3 in Resources */,
+				3B2C81211AAB9AE2007DBD12 /* legend.png in Resources */,
+				3BD39BA01A9BC77B00A0AB2D /* RawIcon.png in Resources */,
+				3B2C81861AAF37E7007DBD12 /* NewFreqBG.png in Resources */,
+				3B2C812B1AABB0AC007DBD12 /* Icon-40@3x.png in Resources */,
+				3B2C812F1AABB0AC007DBD12 /* Icon-Small@3x.png in Resources */,
+				3BED1C101A9BE6DC0033EAE9 /* hyperneuro_green_logo.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3AA9341A7EE91000B3BF93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B3AA91B1A7EE91000B3BF93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB237EE1A88111300840A5D /* JBBarChartView.m in Sources */,
+				3BB237F01A88111300840A5D /* JBLineChartView.m in Sources */,
+				3BC328DF1A8E3C6600DF0C58 /* BrainFeatures.swift in Sources */,
+				3BB237EF1A88111300840A5D /* JBChartView.m in Sources */,
+				3BC328E71A917B9300DF0C58 /* MeditationViewController.swift in Sources */,
+				3BC328DD1A8C575800DF0C58 /* NonBrainFeatures.swift in Sources */,
+				3B3AA9251A7EE91000B3BF93 /* AppDelegate.swift in Sources */,
+				3BB237D91A85EC9400840A5D /* SettingsTableViewController.swift in Sources */,
+				3BB237D01A84461C00840A5D /* Central.swift in Sources */,
+				3BC328D61A8B809D00DF0C58 /* FreqSpecDataViewController.swift in Sources */,
+				3BB237CE1A84397E00840A5D /* ConnectionTableViewController.swift in Sources */,
+				3BC328D41A8B7D6100DF0C58 /* EEGData.swift in Sources */,
+				3BC328D91A8C250900DF0C58 /* SpectrumPower.swift in Sources */,
+				3BB237E11A8604E000840A5D /* RawDataViewController.swift in Sources */,
+				3B2C81371AACC4F2007DBD12 /* MedSettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B3AA9321A7EE91000B3BF93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3AA93D1A7EE91000B3BF93 /* EEGTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B3AA9381A7EE91000B3BF93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B3AA91E1A7EE91000B3BF93 /* EEGTest */;
+			targetProxy = 3B3AA9371A7EE91000B3BF93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B3AA92A1A7EE91000B3BF93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B3AA92B1A7EE91000B3BF93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B3AA92F1A7EE91000B3BF93 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B3AA9301A7EE91000B3BF93 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B3AA93E1A7EE91000B3BF93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "EEGTest/EEGTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B3AA93F1A7EE91000B3BF93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "EEGTest/EEGTest-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B3AA9411A7EE91000B3BF93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = EEGTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = EEGTest;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3B3AA9421A7EE91000B3BF93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = EEGTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = EEGTest;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3B3AA9441A7EE91000B3BF93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EEGTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = EEGTestTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EEGTest.app/EEGTest";
+			};
+			name = Debug;
+		};
+		3B3AA9451A7EE91000B3BF93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EEGTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = EEGTestTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EEGTest.app/EEGTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B3AA91A1A7EE91000B3BF93 /* Build configuration list for PBXProject "EEGTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3AA93E1A7EE91000B3BF93 /* Debug */,
+				3B3AA93F1A7EE91000B3BF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B3AA9401A7EE91000B3BF93 /* Build configuration list for PBXNativeTarget "EEGTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3AA9411A7EE91000B3BF93 /* Debug */,
+				3B3AA9421A7EE91000B3BF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B3AA9431A7EE91000B3BF93 /* Build configuration list for PBXNativeTarget "EEGTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B3AA9441A7EE91000B3BF93 /* Debug */,
+				3B3AA9451A7EE91000B3BF93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B3AA9171A7EE91000B3BF93 /* Project object */;
+}
